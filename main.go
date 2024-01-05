@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/mgp87/go_learning/exercises"
 	"github.com/mgp87/go_learning/variables"
 )
 
@@ -29,4 +30,8 @@ func main() {
 	default:
 		fmt.Printf("%s \n", os)
 	}
+
+	num, conclusion := exercises.GetConditionalResponse("150")
+	fmt.Println("Number: ", num)
+	fmt.Println("Conclusion: ", conclusion)
 }
