@@ -12,6 +12,7 @@ import (
 	"github.com/mgp87/go_learning/iterations"
 	"github.com/mgp87/go_learning/keyboard"
 	"github.com/mgp87/go_learning/maps"
+	"github.com/mgp87/go_learning/middleware"
 	"github.com/mgp87/go_learning/models"
 	"github.com/mgp87/go_learning/routines"
 	"github.com/mgp87/go_learning/users"
@@ -87,4 +88,6 @@ func main() {
 	}()
 
 	webserver.MyWebServer()
+
+	middleware.MyMiddleware()
 }

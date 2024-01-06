@@ -11,7 +11,11 @@ var State bool
 var Salary float32
 var Date time.Time
 
+const num = 5
+
 func RestOfVariables() {
+	fmt.Println("This is a constant: ", num)
+
 	Name = "Miguel"
 	State = true
 	Salary = 1500.69
