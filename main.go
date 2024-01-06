@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/mgp87/go_learning/arrays_slices"
 	"github.com/mgp87/go_learning/exercises"
 	"github.com/mgp87/go_learning/files"
 	"github.com/mgp87/go_learning/functions"
@@ -51,4 +52,8 @@ func main() {
 	functions.Calculus(3, 8)
 	functions.CallClosure()
 	functions.Exponent(3)
+
+	arrays_slices.ShowArrays()
+	arrays_slices.ShowSlice()
+	arrays_slices.CapacityAndLength()
 }
