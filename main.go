@@ -5,6 +5,10 @@ import (
 	"runtime"
 
 	"github.com/mgp87/go_learning/exercises"
+	"github.com/mgp87/go_learning/files"
+	"github.com/mgp87/go_learning/functions"
+	"github.com/mgp87/go_learning/iterations"
+	"github.com/mgp87/go_learning/keyboard"
 	"github.com/mgp87/go_learning/variables"
 )
 
@@ -34,4 +38,17 @@ func main() {
 	num, conclusion := exercises.GetConditionalResponse("150")
 	fmt.Println("Number: ", num)
 	fmt.Println("Conclusion: ", conclusion)
+
+	keyboard.GetNumbers()
+	iterations.Iter()
+
+	// fmt.Println(exercises.MulTable())
+
+	files.SaveTable()
+	files.AddTable()
+	files.ReadFile()
+
+	functions.Calculus(3, 8)
+	functions.CallClosure()
+	functions.Exponent(3)
 }
