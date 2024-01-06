@@ -79,5 +79,9 @@ func main() {
 	//state := <-c - This will wait for the channel to receive a value stopping the main thread until it happens and assigning the value to a variable (state)
 	//fmt.Printf("Channel value %t", state)
 	// If channel does not need to return a value, it can be declared and not assigned to a variable:
-	<-c // This will wait for the channel to receive a value stopping the main thread until it happens too
+	// <-c - This will wait for the channel to receive a value stopping the main thread until it happens too
+	// Usually we use a defer with all channels nested in a function:
+	defer func() {
+		<-c
+	}()
 }
