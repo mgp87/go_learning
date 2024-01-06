@@ -9,6 +9,7 @@ import (
 	"github.com/mgp87/go_learning/exercises"
 	"github.com/mgp87/go_learning/files"
 	"github.com/mgp87/go_learning/functions"
+	"github.com/mgp87/go_learning/generics"
 	"github.com/mgp87/go_learning/iterations"
 	"github.com/mgp87/go_learning/keyboard"
 	"github.com/mgp87/go_learning/maps"
@@ -90,4 +91,7 @@ func main() {
 	webserver.MyWebServer()
 
 	middleware.MyMiddleware()
+
+	resultGenerics := generics.MyGeneric(3, 5)
+	fmt.Println("Result: ", resultGenerics)
 }
