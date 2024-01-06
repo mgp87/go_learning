@@ -13,6 +13,7 @@ import (
 	"github.com/mgp87/go_learning/keyboard"
 	"github.com/mgp87/go_learning/maps"
 	"github.com/mgp87/go_learning/models"
+	"github.com/mgp87/go_learning/routines"
 	"github.com/mgp87/go_learning/users"
 	"github.com/mgp87/go_learning/variables"
 )
@@ -72,4 +73,12 @@ func main() {
 
 	deferfunc.CheckDefer()
 	deferfunc.PanicExample()
+
+	c := make(chan bool)
+	go routines.SlowName("Miguel GP", c) // This will be executed in a different independent thread (goroutine), main will not wait for it to finish
+	state := <-c                         // This will wait for the channel to receive a value stopping the main thread until it happens
+	fmt.Printf("Channel value %t", state)
+	// If channel does not need to return a value, it can be declared and not assigned to a variable:
+	<-c // This will wait for the channel to receive a value stopping the main thread until it happens too
+
 }
