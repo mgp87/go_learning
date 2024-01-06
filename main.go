@@ -16,6 +16,7 @@ import (
 	"github.com/mgp87/go_learning/routines"
 	"github.com/mgp87/go_learning/users"
 	"github.com/mgp87/go_learning/variables"
+	"github.com/mgp87/go_learning/webserver"
 )
 
 func main() {
@@ -84,4 +85,6 @@ func main() {
 	defer func() {
 		<-c
 	}()
+
+	webserver.MyWebServer()
 }
