@@ -11,6 +11,7 @@ import (
 	"github.com/mgp87/go_learning/iterations"
 	"github.com/mgp87/go_learning/keyboard"
 	"github.com/mgp87/go_learning/maps"
+	"github.com/mgp87/go_learning/models"
 	"github.com/mgp87/go_learning/users"
 	"github.com/mgp87/go_learning/variables"
 )
@@ -62,4 +63,9 @@ func main() {
 	maps.ShowMaps()
 
 	users.NewUser()
+
+	man := new(models.Man)
+	exercises.BreathingHumans(man)
+	woman := new(models.Woman)
+	exercises.BreathingHumans(woman)
 }
