@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/mgp87/go_learning/arrays_slices"
+	"github.com/mgp87/go_learning/deferfunc"
 	"github.com/mgp87/go_learning/exercises"
 	"github.com/mgp87/go_learning/files"
 	"github.com/mgp87/go_learning/functions"
@@ -68,4 +69,7 @@ func main() {
 	exercises.BreathingHumans(man)
 	woman := new(models.Woman)
 	exercises.BreathingHumans(woman)
+
+	deferfunc.CheckDefer()
+	deferfunc.PanicExample()
 }
