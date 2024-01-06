@@ -16,6 +16,9 @@ const num float32 = 5.3
 func RestOfVariables() {
 	fmt.Println("This is a constant: ", num)
 
+	const num2 = "5.3"
+	fmt.Println("This is another constant: ", num2)
+
 	Name = "Miguel"
 	State = true
 	Salary = 1500.69
