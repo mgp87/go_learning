@@ -5,4 +5,5 @@ type Human interface { // Definition of functions that must be implemented by a 
 	Think()
 	Eat()
 	Sex() string
+	IsAlive() bool
 }

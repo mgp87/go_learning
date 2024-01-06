@@ -20,3 +20,7 @@ func (man *Woman) Eat() {
 func (man *Woman) Sex() string {
 	return "female"
 }
+
+func (man *Woman) IsAlive() bool {
+	return true
+}
