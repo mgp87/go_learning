@@ -10,6 +10,8 @@ import (
 	"github.com/mgp87/go_learning/functions"
 	"github.com/mgp87/go_learning/iterations"
 	"github.com/mgp87/go_learning/keyboard"
+	"github.com/mgp87/go_learning/maps"
+	"github.com/mgp87/go_learning/users"
 	"github.com/mgp87/go_learning/variables"
 )
 
@@ -56,4 +58,8 @@ func main() {
 	arrays_slices.ShowArrays()
 	arrays_slices.ShowSlice()
 	arrays_slices.CapacityAndLength()
+
+	maps.ShowMaps()
+
+	users.NewUser()
 }
